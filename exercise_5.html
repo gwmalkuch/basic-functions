@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Functions! (Five)</title>
+</head>
+<body>
+	<script>
+		var sum = 0;
+		var number = 0;
+
+		function addToAverage(num) { //declare function addToAverage with num as parameter for value
+			sum = sum + num; //add num's value to the total
+			number = number + 1; //add one to the count
+		}
+
+		function getAverage() { //declare getAverage function
+			return sum / number; //averages sum and number
+		}
+		addToAverage(13); //add 13 to sum and one to count
+		addToAverage(4); //add 4 to sum and one to count
+		addToAverage(134); //add 134 to sum and one to count
+		addToAverage(21); //add 21 to sum and one to count
+		addToAverage(30); //add 30 to sum and one to cound
+		console.log(getAverage()); //log the average
+
+		/*
+			TODO: Using the functions above, compute and print the average of:
+			13, 4, 134, 21, 30
+		*/
+
+		/*
+			Optional: Create a function which averages an array of numbers
+			Optional: Create a variadic funciton which averages all of its arguments
+		*/
+
+	</script>
+</body>
+</html>
